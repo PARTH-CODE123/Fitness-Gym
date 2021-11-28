@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parth BMI Calculator</title>
+    <link rel="stylesheet" href="css/bmi.css">
+</head>
+<body>
+    <!-- about bmi -->
+    <div class="about">
+        <h1>
+            <strong>What your BMI means?</strong>
+        </h1>
+        
+        <p class="para">To understand what your BMI means, it’s useful to take a step back and understand what it’s measuring and why it’s measured.</p><br>
+        <p class="para">BMI is a calculation of your size that takes into account your height and weight. A number of years ago, I remember using charts that asked you to find your height along the left side and then slide your finger to the right to see your "ideal weight" from choices listed under small, medium, or large "frame" sizes.</p><br>
+        <p class="para">These charts came from actuarial statistics, calculations that life insurance companies use to determine your likelihood of reaching an advanced age based on data from thousands of people. These charts were cumbersome to use, and it was never clear how one was to decide a person’s "frame size."</p><br>
+        <p class="para">BMI does something similar: it expresses the relationship between your height and weight as a single number that is not dependent on frame size. Although the origin of the BMI is over 200 years old, it is fairly new as a measure of health.</p>
+        <img src="img/bmi img2.jpg" alt=""width="50%">
+    </div>
+    <!-- bmi calculator  -->
+    <div class="bmi">
+        <h2>BMI Calculator</h2>
+        <p class="text">Height(in cm)</p>
+        <input type="text" id="height">
+        <p class="text">Weight(in kg)</p>
+        <input type="text" id="weight">
+        <p id="result"></p>
+        <button id="btn" onclick="bmi()">Calculate</button>
+        <!-- <p id="info">Please enter height in [cm] and wight in [kg]</p> -->
+
+    </div>
+    <script>
+        function bmi(){
+            var h=document.getElementById('height').value;
+            var w=document.getElementById('weight').value;
+            var bmi=w/ (h/100 * h/100);
+            var total=bmi.toFixed(2);
+            document.getElementById('result').innerHTML="Your BMI is" + total
+        }
+    </script>
+</body>
+</html>

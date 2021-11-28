@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.background {
+    overflow: hidden;
+    position: relative;
+}
+.background img{
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.img{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0.4;
+    /* background-color: transparent; */
+}
+.content{
+    position: relative;
+}
+
+h1{
+    background: -webkit-linear-gradient(rgb(46, 151, 158), #000000 );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    padding-top: 20px;
+    font-weight: bold;
+    background-color: rgb(129, 76, 7);
+}
+h4{
+    background: -webkit-linear-gradient(rgb(46, 151, 158), #000000 );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgb(129, 76, 7);
+}
+h2{
+    padding-top: 40px;
+    padding-left: 20px;
+}
+ul{
+    padding-left: 20px;
+
+}
+ul li{
+    margin: 10px;
+    padding: 5px;
+    font-size: 1.3rem;
+}
+table {
+    border-collapse: collapse;
+    width: 50%;
+    margin-top: 20px;
+    margin-left: 30vw;
+}
+  
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid rgb(48, 46, 46);
+    font-weight: bold;
+}
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border: 2px solid rgb(0, 0, 0) ;
+    box-shadow: rgb(53, 52, 53) 6px 4px 10px;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 60px;
+    /* background-color: rgb(241, 240, 238); */
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
